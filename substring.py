@@ -1,4 +1,4 @@
-def soluton(message: str):
+def soluton(message: str) -> int:
     substrings = []
     for letter in message:
         if substrings:
