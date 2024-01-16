@@ -1,18 +1,19 @@
-def fibonacci(n: int) -> int:
+def fibonacci(num: int):
     """
     fibonacci: computes the nth fibonacci number
-    @param n: the nth number to compute the fibonacci of
+    @param num: the nth number to compute the fibonacci of
     
     Returns:
         an integer
     """
-    if n <= 0:
-        return 0
-    elif n == 1:
-        return 1
-    return fibonacci(n - 1) + fibonacci(n - 2)
+    a, b, c = 0, 1, 0
+    future = 0
+    while c <= num - 2:
+       future = a + b
+       a = b
+       b = future
+       c += 1
+    yield future
 
-def main():
-    print(fibonacci(6))
-
-main()
+for num in fibonacci(10000):
+    print(num)
