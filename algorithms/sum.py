@@ -4,8 +4,7 @@ def add(num: int) -> int:
     less than num
     @param num: find the sum of squares of +ve integers less than num
     """
-    squares_sum = sum((i * i for i in range(num)))
-    return squares_sum
+    return sum((i * i for i in range(num)))
 
 def main():
     try:
