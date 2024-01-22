@@ -7,7 +7,8 @@ def reverse(array: list) -> list:
 
 def main():
     array = [1, 2, 3, 4, 5]
-    print(reverse(array))
+    print("Original array", array)
+    print("Reversed array", array)
 
 if __name__ == '__main__':
     main()
