@@ -7,4 +7,11 @@ def add(num: int) -> int:
     squares_sum = sum((i * i for i in range(num)))
     return squares_sum
 
-print(add(5))
+def main():
+    try:
+        num = int(input("Enter an integger value: "))
+        print(f'The sum of all positive integers less than {num} is', add(num))
+    except ValueError as e:
+        print("You didn't enter a number!")
+
+main()
