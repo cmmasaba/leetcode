@@ -12,5 +12,6 @@ def fibonacci(num: int):
        c += 1
     yield b
 
-for num in fibonacci(10):
-    print(num)
+#for num in fibonacci(10):
+#    print(num)
+print(fibonacci(10).__next__())
